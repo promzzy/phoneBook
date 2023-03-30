@@ -1,0 +1,20 @@
+.contact {
+  height: 70px;
+  display: flex;
+  border-bottom: 1px solid #282c34;
+  justify-content: space-between;
+  align-items: center;
+}
+.contactName {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.contactAction > button {
+  height: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  margin-right: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}

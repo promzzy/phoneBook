@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const contacts = require("./routes/contacts");
 
 const app = express();
 
@@ -8,9 +9,8 @@ const port = 5000;
 // app.get("*", (req, res) => {
 //   res.sendFile("index.html", { root: path.join(__dirname, "") });
 // });
-app.get("/api", (req, res) => {
-  res.json({ name: "PROMISE STEVEN" });
-});
+app.use("/api/contacts", contacts);
+
 app.all("*", (req, res) => {
   res.status(404).send("<h2>Page not found</h2>");
 });

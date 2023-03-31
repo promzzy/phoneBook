@@ -1,0 +1,42 @@
+.popupRoot{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.379);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999 ;
+  overflow: hidden;
+}
+.childComponent{
+  border-radius: 5px;
+  padding: 10px 20px;
+  min-width: 30vw;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  /* color: green; */
+  max-height: 80vh;
+  overflow:  scroll;
+  scrollbar-width: none;
+  scrollbar-width: none;
+}
+  .childComponent::-webkit-scrollbar{
+      display: 'none';
+    }
+.popupOpen{
+display: none;
+}
+.cancelBtnWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cancelButton{
+  background-color: transparent;
+  border: none;
+  padding: 5px 0px;
+}
+.cancelIcon{
+  font-size: 23px;
+}

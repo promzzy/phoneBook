@@ -4,24 +4,18 @@ const dotenv = require("dotenv");
 const path = require("path");
 const contacts = require("./routes/contacts");
 const connectDB = require("./config/db");
+const bodyParser = require("body-parser");
 
-const phonebook = require("./model/phonebook");
+const app = express();
+app.use(cors());
+
+// use body-parser middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 dotenv.config({ path: "./config/config.env" });
 connectDB();
-const app = express();
 const port = process.env.PORT || 5000;
-async function saveContact() {
-  const contact = new phonebook({
-    name: "promise stephen",
-    phoneNumber: "08064453298",
-    address: "Abuja Nigeria",
-  });
-  await contact.save();
-  console.log(contact);
-}
-
-app.use(cors());
 
 // app.use(express.static(path.join(__dirname, "build")));
 // app.get("*", (req, res) => {

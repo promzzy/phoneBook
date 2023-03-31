@@ -11,7 +11,7 @@ function ContactRow({contact, onToggleFavourite, onEdit, onDelete}){
               </div>
               <div className={classes.contactAction}>
               {
-                contact.favourite ? (
+                contact.isFavorite ? (
                 <button onClick = {onToggleFavourite} title="Mark as non-favourite">
                 ⭐️
                 </button>

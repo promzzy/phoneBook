@@ -1,0 +1,30 @@
+@keyframes loader-animation {
+    0% {
+        background-color: #fff;
+      }
+      50% {
+        background-color: #ccc;
+      }
+      100% {
+        background-color: #fff;
+      }
+
+}
+
+.animator{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(232, 232, 232, 0.76);
+    animation: loader-animation infinite 2s ease;
+}
+.loaderContainner{
+    background: rgba(175, 175, 175, 0.5);
+    height: 20px;
+    width: 100%;
+    margin: 5px;
+    overflow: hidden;
+    position: relative;
+}

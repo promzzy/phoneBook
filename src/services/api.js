@@ -15,8 +15,6 @@ async function request(url, payload, method, header) {
       url,
       headers: Object.assign(defaultHeader, header),
       [requestMethod === "get" ? "params" : "data"]: payload,
-      mode: "no-cors",
-      cache: "no-cache",
     });
     return response.data;
   } catch ({ response }) {

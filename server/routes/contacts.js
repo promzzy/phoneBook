@@ -3,6 +3,6 @@ const { contactList } = require("../controller/contactsConroller");
 
 const router = express.Router();
 
-router.get("/api/contacts", contactList);
+router.get("/", contactList);
 
 module.exports = router;

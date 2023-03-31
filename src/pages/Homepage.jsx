@@ -2,10 +2,13 @@ import { useState } from 'react'
 import ContactRow from '../components/ContactRow'
 import { contacts } from '../utils/constants'
 import classes from './Homepage.module.css'
+import useHomePage from './hooks/useHomePage'
 
 function Homepage(){
   const [ showActive] = useState("ALL")
   const [searchValue] = useState('')
+
+  useHomePage()
 
   return(<div className={classes.pageRoot}>
     <div  className={classes.contactContainer}>

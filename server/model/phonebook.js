@@ -1,11 +1,7 @@
 const mongoose = require("mongoose");
 
+// phone book schema
 const phonebookSchema = new mongoose.Schema({
-  // id: {
-  //   type: "integer",
-  //   required: true,
-  //   autoIncrement: true,
-  // },
   name: {
     type: String,
     required: true,
@@ -21,14 +17,6 @@ const phonebookSchema = new mongoose.Schema({
     required: true,
     default: false,
   },
-  // createdAt: {
-  //   type: Date,
-  //   default: () => new Date.now(),
-  // },
-  // updatedAt: {
-  //   type: Date,
-  //   default: () => new Date.now(),
-  // },
 });
 
 module.exports = mongoose.model("phonebook", phonebookSchema);

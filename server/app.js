@@ -3,18 +3,18 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const path = require("path");
 const contacts = require("./routes/contacts");
-const connectDB = require("./config/db");
+const connectDB = require("./dbConfig/db");
 const bodyParser = require("body-parser");
 
 const app = express();
 app.use(cors());
+dotenv.config();
 
 // use body-parser middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-dotenv.config({ path: "./config/config.env" });
 connectDB();
+
 const port = process.env.PORT || 5000;
 
 // app.use(express.static(path.join(__dirname, "build")));

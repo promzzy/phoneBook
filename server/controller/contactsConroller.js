@@ -23,6 +23,7 @@ const createContact = async (req, res) => {
     email,
   });
   await contactToSave.save();
+  console.log(contactToSave, "<==");
   res.status(200).send({ status: "success", contact: contactToSave });
 };
 

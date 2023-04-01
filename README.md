@@ -66,3 +66,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
      - `/api/contacts/favourite`
      - `PUT` Method,  this is a request that handles marking contact as favorite or not contact
      - `_id`, is passed as body
+
+     ## DATA BASE USED
+
+     - `MongoDB`

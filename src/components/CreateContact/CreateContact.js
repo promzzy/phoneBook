@@ -20,7 +20,7 @@ const ManagerTeamMember = ({ isEdit, onSuccess, onClose, contact }) => {
         _id: contact._id,
       });
     }
-  }, [contact, isEdit]);
+  }, [contact, isEdit]); // eslint-disable-line
 
   const { name, address, email, phoneNumber } = state;
   return (

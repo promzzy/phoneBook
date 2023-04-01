@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React from "react";
 import ContactRow from "../components/ContactRow";
 import SkeletonLoader from "../components/SkeletonLoader";
 import classes from "./Homepage.module.css";

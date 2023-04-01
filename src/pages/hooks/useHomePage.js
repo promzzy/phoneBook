@@ -21,7 +21,7 @@ function useHomePage() {
     (stateVal, value) => ({ ...stateVal, ...value }),
     initialState
   );
-  const { filteredContacts, searchValue } = state;
+  const { searchValue } = state;
 
   useEffect(() => {
     const filteredItems = contacts.filter((item) =>
@@ -44,7 +44,7 @@ function useHomePage() {
       });
   }
 
-  useEffect(getAllContacts, []);
+  useEffect(getAllContacts, []); // eslint-disable-line
 
   function toggleFavourite(id) {
     reduxDispatch(setIsLoading(true));

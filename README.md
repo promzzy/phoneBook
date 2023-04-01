@@ -28,5 +28,39 @@ It correctly bundles React in production mode and optimizes the build for the be
 ## Front-end(React.js) Structure
 
 #### Home Screen
+![contacts view](src/assets/WhatsApp%20Image%202023-04-01%20at%2010.36.02%20AM.jpeg "Optional title")
 
 
+
+## User story
+
+- user should be able to create contacts
+- user should be able to view contacts
+- user should be able to delete contact
+- user should be able to edit contact
+- user should be able to add a contact to favorites
+
+
+## Back-end(NODE.js & Express)
+
+## APIS
+  - Create Contact
+     - `/api/contacts`
+     - `POST` Method,  this is a request that handles adding new contact
+     - `name`, `email`, `phoneNumber`, `address`, is passed as body
+
+  - Edit Contact
+     - `/api/contacts`
+     - `PUT` Method,  this is a request that handles editing a contact contact
+     - `name`, `email`, `phoneNumber`, `address`, `_id` is passed as body
+
+
+  - Delete Contact
+     - `/api/contacts/:_id`
+     - `DELETE` Method,  this is a request that handles deleting a contact
+
+
+  - Toggles Favorite
+     - `/api/contacts/favourite`
+     - `PUT` Method,  this is a request that handles marking contact as favorite or not contact
+     - `_id`, is passed as body

@@ -12,16 +12,17 @@ Installs the application on your local machine and all packages on package.json
 
 
 
+### `npm run start:server`
+
+Starts the local server (Node.js Backendend app) in the development mode.\
+Open [http://localhost:5000](http://localhost:5000) to interact with the endpoint on postman or with frontend (React.js).
+
+
 ### `npm start`
 
 Runs the Front-end app (React) in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-
-### `npm run start:server`
-
-Runs the Node.js (Backendend app) in the development mode.\
-Open [http://localhost:5000](http://localhost:5000) to interact with the endpoint on postman or with frontend (React.js).
 
 
 

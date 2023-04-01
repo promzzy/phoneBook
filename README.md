@@ -1,6 +1,6 @@
 # Phone Book App
 
-This project was bootstrapped with `React.js,`, `Node.js`, `Express`, `Redux`, and `Axios`..
+This project was bootstrapped with `React.js,`, `Node.js`, `MongoDB`, `Express`, `Redux`, and `Axios`..
 
 ## Available Scripts
 

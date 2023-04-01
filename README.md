@@ -6,6 +6,12 @@ This project was bootstrapped with `React.js,`, `Node.js`, `Express`, `Redux`, a
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs the application on your local machine and all packages on package.json
+
+
+
 ### `npm start`
 
 Runs the Front-end app (React) in the development mode.\
